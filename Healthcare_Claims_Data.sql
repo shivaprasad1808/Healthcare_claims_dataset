@@ -21,16 +21,6 @@ CREATE TABLE claimsdata (
 
 );
 
-
-BULK INSERT ClaimsData
-FROM 'C:\Users\DELL\Desktop\DATA\claims_data.csv'
-WITH (
-    FIRSTROW = 2,
-    FIELDTERMINATOR = ',',
-    ROWTERMINATOR = '\n',
-    TABLOCK
-);
-
 select * from claimsdata; 
 
 
@@ -129,4 +119,5 @@ WHERE ClaimStatus = 'Denied'
 group by DiagnosisCode, ReasonCode)
 select DiagnosisCode, ReasonCode, DenialCount
 from CTE where rn=1;
+
 
