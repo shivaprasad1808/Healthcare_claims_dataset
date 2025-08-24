@@ -1,6 +1,6 @@
 # Healthcare Claims Data Analysis
 
-This repository contains a **sample healthcare claims dataset** (`claims_data.csv` / `claims_data.xlsx`) with **1,000 records**, designed for practicing **SQL, data analysis, and visualization**.  
+This repository contains a **sample healthcare claims dataset**  with **1,000 records**
 
 ---
 
