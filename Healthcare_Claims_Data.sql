@@ -1,6 +1,6 @@
-create database project;
+create database healthcare_claims;
 
-use project;
+use healthcare_claims;
 
 CREATE TABLE claimsdata (
     ClaimID            VARCHAR(20),
@@ -119,5 +119,6 @@ WHERE ClaimStatus = 'Denied'
 group by DiagnosisCode, ReasonCode)
 select DiagnosisCode, ReasonCode, DenialCount
 from CTE where rn=1;
+
 
 
